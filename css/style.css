@@ -182,7 +182,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   top: 0; left: 0;
   height: 3px;
   width: 0%;
-  background: var(--primary);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
   z-index: 1001;
   box-shadow: var(--shadow-glow);
   transition: width 0.1s linear;
