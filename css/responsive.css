@@ -82,5 +82,5 @@
   .filter-btn { padding: 7px 14px; font-size: 12px; }
 
   .modal-content { padding: 22px 18px 26px; }
-  #backToTop { left: 16px; bottom: 16px; width: 42px; height: 42px; }
+  #backToTop { right: 16px; bottom: 16px; width: 42px; height: 42px; }
 }
