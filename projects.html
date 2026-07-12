@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Basudeb Nayak</title>
+  <meta name="description" content="Projects by Basudeb Nayak — games and web builds.">
+
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-hex"><span>BN</span></div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <p class="loader-text">INITIALIZING PORTFOLIO<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <div id="scroll-progress"></div>
+  <canvas id="particles"></canvas>
+
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Logo">
+        <span>Basudeb<em>.dev</em></span>
+      </a>
+
+      <div class="nav-right" id="navRight">
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        </div>
+      </div>
+
+      <button id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">PROJECTS</p>
+        <h1 class="reveal">Things I've built</h1>
+        <p class="reveal">Sample projects — replace these with your own. Click any card to see the full write-up:
+          features, challenges, and the journey behind it.</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="section-container">
+        <div class="filter-buttons reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card reveal" data-category="games" data-project="neon-runner" tabindex="0" role="button"
+            aria-label="Open Neon Runner project details">
+            <div class="project-img"><img src="images/project1.png" alt="Neon Runner project screenshot"></div>
+            <div class="project-body">
+              <h3>Neon Runner</h3>
+              <p>An endless runner prototype built in Unreal Engine 5, focused on solving smooth procedural level
+                generation and responsive input handling.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="web javascript" data-project="portfolio-site" tabindex="0"
+            role="button" aria-label="Open Developer Portfolio project details">
+            <div class="project-img"><img src="images/project2.png" alt="Portfolio site project screenshot"></div>
+            <div class="project-body">
+              <h3>Developer Portfolio</h3>
+              <p>A responsive personal portfolio solving the problem of presenting projects and skills clearly, with
+                dark/light themes.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="games" data-project="dungeon-blueprint" tabindex="0"
+            role="button" aria-label="Open Dungeon Blueprint Kit project details">
+            <div class="project-img"><img src="images/project3.png" alt="Dungeon blueprint project screenshot"></div>
+            <div class="project-body">
+              <h3>Dungeon Blueprint Kit</h3>
+              <p>A modular dungeon-generation Blueprint system solving repetitive level design work.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Logo">
+        <span>Basudeb<em>.dev</em></span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://yourusername.itch.io" target="_blank" rel="noopener" aria-label="itch.io"><i
+            class="fa-brands fa-itch-io"></i></a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Basudeb Nayak. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Project details modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <div class="modal-media">
+        <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-content">
+        <h3 class="modal-title"></h3>
+        <div class="modal-tags"></div>
+
+        <div class="modal-block">
+          <h4>About</h4>
+          <p class="modal-about"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Problem It Solves</h4>
+          <p class="modal-problem"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Features</h4>
+          <ul class="modal-features"></ul>
+        </div>
+        <div class="modal-block">
+          <h4>Challenges</h4>
+          <p class="modal-challenges"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Journey</h4>
+          <p class="modal-journey"></p>
+        </div>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline modal-github"><i
+              class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-primary modal-demo"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

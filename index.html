@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basudeb Nayak | Game &amp; Frontend Developer</title>
+  <meta name="description"
+    content="Portfolio of Basudeb Nayak — Game Developer, Game Designer, Unreal Engine 5 Enthusiast.">
+
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-hex"><span>BN</span></div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <p class="loader-text">INITIALIZING PORTFOLIO<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===================== PARTICLE BACKGROUND ===================== -->
+  <canvas id="particles"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Logo">
+        <span>Basudeb<em>.dev</em></span>
+      </a>
+
+      <div class="nav-right" id="navRight">
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        </div>
+      </div>
+
+      <button id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-grid"></div>
+      <div class="section-container hero-container">
+        <div class="hero-text reveal">
+          <p class="hero-eyebrow"><span class="dot"></span> PLAYER 01 // ONLINE</p>
+          <h1>Hello,<br>I'm <span class="highlight">Basudeb Nayak</span></h1>
+          <h2 class="typing-wrap">
+            <span id="typedText"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">Building immersive worlds and interactive experiences — from Unreal Engine 5 levels to
+            responsive web interfaces.</p>
+
+          <div class="hero-buttons">
+            <a href="resume.html" class="btn btn-primary">
+              <i class="fa-solid fa-file-lines"></i> Resume
+            </a>
+            <a href="projects.html" class="btn btn-outline">
+              <i class="fa-solid fa-diagram-project"></i> Projects
+            </a>
+            <a href="contact.html" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane"></i> Hire Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://yourusername.itch.io" target="_blank" rel="noopener" aria-label="itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hex-frame">
+            <img src="images/profile.jpg" alt="Basudeb Nayak avatar">
+            <svg class="hex-ring" viewBox="0 0 220 220">
+              <polygon points="110,4 206,57 206,163 110,216 14,163 14,57" />
+            </svg>
+          </div>
+          <div class="hud-chip chip-1"><i class="fa-solid fa-cube"></i> Unreal Engine 5</div>
+          <div class="hud-chip chip-2"><i class="fa-solid fa-code"></i> Frontend Dev</div>
+          <div class="hud-chip chip-3"><i class="fa-solid fa-gamepad"></i> Game Dev</div>
+        </div>
+      </div>
+
+      <a href="#portfolio" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ===================== PORTFOLIO (projects preview, then skills) ===================== -->
+    <section id="portfolio" class="section">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">PORTFOLIO</p>
+        <h2 class="section-title reveal">Selected Work &amp; Skillset</h2>
+
+        <!-- Projects preview -->
+        <div class="portfolio-subhead reveal">
+          <h3>Featured Projects</h3>
+          <a href="projects.html" class="view-all-link">View all projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal" data-project="neon-runner" tabindex="0" role="button"
+            aria-label="Open Neon Runner project details">
+            <div class="project-img"><img src="images/project1.png" alt="Neon Runner project screenshot"></div>
+            <div class="project-body">
+              <h3>Neon Runner</h3>
+              <p>An endless runner prototype built in Unreal Engine 5, focused on fast, responsive movement.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-project="portfolio-site" tabindex="0" role="button"
+            aria-label="Open Developer Portfolio project details">
+            <div class="project-img"><img src="images/project2.png" alt="Portfolio site project screenshot"></div>
+            <div class="project-body">
+              <h3>Developer Portfolio</h3>
+              <p>A responsive personal portfolio with dark/light themes and scroll-based interactions.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-project="dungeon-blueprint" tabindex="0" role="button"
+            aria-label="Open Dungeon Blueprint Kit project details">
+            <div class="project-img"><img src="images/project3.png" alt="Dungeon blueprint project screenshot"></div>
+            <div class="project-body">
+              <h3>Dungeon Blueprint Kit</h3>
+              <p>A modular dungeon-generation Blueprint system for quickly assembling levels.</p>
+              <span class="project-open-hint"><i class="fa-solid fa-expand"></i> Click to view details</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="portfolio-subhead reveal" style="margin-top: 88px;">
+          <h3>Skills</h3>
+        </div>
+
+        <div class="skills-columns">
+          <div class="skill-category reveal">
+            <h3><i class="fa-solid fa-code"></i> Programming</h3>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C++</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span>70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3><i class="fa-solid fa-gamepad"></i> Game Development</h3>
+            <div class="skill-circles">
+              <div class="circle-skill" data-percent="85">
+                <svg viewBox="0 0 100 100">
+                  <circle class="bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="fg" cx="50" cy="50" r="42"></circle>
+                </svg>
+                <span class="circle-label">Unreal Engine 5</span>
+              </div>
+              <div class="circle-skill" data-percent="80">
+                <svg viewBox="0 0 100 100">
+                  <circle class="bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="fg" cx="50" cy="50" r="42"></circle>
+                </svg>
+                <span class="circle-label">Blueprint</span>
+              </div>
+              <div class="circle-skill" data-percent="75">
+                <svg viewBox="0 0 100 100">
+                  <circle class="bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="fg" cx="50" cy="50" r="42"></circle>
+                </svg>
+                <span class="circle-label">Level Design</span>
+              </div>
+              <div class="circle-skill" data-percent="70">
+                <svg viewBox="0 0 100 100">
+                  <circle class="bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="fg" cx="50" cy="50" r="42"></circle>
+                </svg>
+                <span class="circle-label">Lighting</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+            <div class="skill-cards">
+              <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+              <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+              <div class="skill-card"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+              <div class="skill-card"><i class="fa-solid fa-cube"></i><span>Blender</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Logo">
+        <span>Basudeb<em>.dev</em></span>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://yourusername.itch.io" target="_blank" rel="noopener" aria-label="itch.io"><i
+            class="fa-brands fa-itch-io"></i></a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="year"></span> Basudeb Nayak. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Project details modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <div class="modal-media">
+        <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-content">
+        <h3 class="modal-title"></h3>
+        <div class="modal-tags"></div>
+
+        <div class="modal-block">
+          <h4>About</h4>
+          <p class="modal-about"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Problem It Solves</h4>
+          <p class="modal-problem"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Features</h4>
+          <ul class="modal-features"></ul>
+        </div>
+        <div class="modal-block">
+          <h4>Challenges</h4>
+          <p class="modal-challenges"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Journey</h4>
+          <p class="modal-journey"></p>
+        </div>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline modal-github"><i
+              class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-primary modal-demo"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
