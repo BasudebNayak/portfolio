@@ -738,6 +738,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .modal-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
 
 /* ============== RESUME PAGE ============== */
+/* ============== RESUME download section  ============== */
 .resume-panel {
   background: var(--card);
   border: 1px solid var(--border);
@@ -756,11 +757,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .resume-info h3 { font-family: var(--font-display); font-size: 18px; margin-bottom: 6px; }
 .resume-info p { color: var(--text-secondary); font-size: 14px; }
 .resume-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
+/* ============== RESUME VIEW SECTION ============== */
 .resume-doc {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: var(--shadow-glow);
   padding: 40px;
 }
 .resume-doc-head { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-bottom: 36px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
