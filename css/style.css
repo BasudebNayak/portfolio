@@ -783,10 +783,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .resume-project { padding: 14px 0; border-bottom: 1px solid var(--border); }
 .resume-project:last-child { border-bottom: none; }
 .resume-project-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
-.resume-project-sub { font-size: 12px; color: var(--accent); font-style: italic; margin-bottom: 8px; }
+.resume-project-sub { font-size: 12px; color: var(--accent); margin-bottom: 8px; }
 .resume-list { padding-left: 18px; list-style: disc; }
 .resume-list li { font-size: 13px; color: var(--text-secondary); line-height: 1.8; }
-.resume-list li a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.resume-list li a { color: var(--accent); font-style: italic; text-decoration: underline; text-underline-offset: 2px; }
 
 .resume-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; }
 .resume-two-col p { font-size: 13px; color: var(--text-secondary); }
