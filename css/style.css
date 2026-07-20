@@ -511,7 +511,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: rgba(0,0,0,0.2);
   border-bottom: 1px solid var(--border);
 }
-.t-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--text-secondary); }
+.t-dot { width: 10px; height: 10px; border-radius: 50%; }
+.t-dot.red { background: #f87171; }
+.t-dot.yellow { background: #fbbf24; }
+.t-dot.green { background: #34d399; }
 .t-title { margin-left: 8px; font-size: 12px; color: var(--text-secondary); font-family: monospace; }
 
 .terminal-body { padding: 20px; font-family: 'Space Grotesk', monospace; font-size: 14px; line-height: 2; }
