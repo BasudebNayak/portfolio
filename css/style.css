@@ -494,7 +494,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-display);
   font-size: 36px;
   font-weight: 700;
-  color: var(--text);
+  color: var(--accent);
 }
 .stat-label { color: var(--text-secondary); font-size: 13px; }
 
@@ -515,10 +515,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .t-title { margin-left: 8px; font-size: 12px; color: var(--text-secondary); font-family: monospace; }
 
 .terminal-body { padding: 20px; font-family: 'Space Grotesk', monospace; font-size: 14px; line-height: 2; }
-.terminal-body .prompt { color: var(--text); margin-right: 8px; }
+.terminal-body .prompt { color: var(--accent); margin-right: 8px; }
 .terminal-body .out { color: var(--text-secondary); margin-bottom: 8px; }
-.terminal-body .out.ok { color: var(--text); }
-
+.terminal-body .out.ok { color: #34d399; }
 /* ============== TIMELINE ============== */
 .timeline { position: relative; padding-left: 32px; }
 .timeline::before {
