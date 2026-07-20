@@ -4,7 +4,7 @@
    ========================================================== */
 
 :root {
-  /* Dark (default) theme — blue/cyan, matching the old site */
+  /* Dark  theme*/
   --bg: #0F172A;
   --bg-alt: #0B1220;
   --card: #1E293B;
@@ -25,7 +25,7 @@
   --radius-sm: 8px;
   --transition: 0.3s ease;
 }
-
+/* light  theme*/
 [data-theme="light"] {
   --bg: #F1F5F9;
   --bg-alt: #E2E8F0;
@@ -524,7 +524,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 6px; top: 6px; bottom: 6px;
+  left: 6px; top: 6px; bottom: 50px;
   width: 2px;
   background: var(--border);
 }
