@@ -356,7 +356,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-eyebrow .dot {
   width: 8px; height: 8px;
   border-radius: 50%;
-  background: var(--primary);
+  background: var(--accent);
   box-shadow: var(--shadow-glow);
   animation: blink 1.6s ease-in-out infinite;
 }
@@ -436,7 +436,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
   animation: float 4s ease-in-out infinite;
 }
-.hud-chip i { color: var(--text); }
+.hud-chip i { color: var(--accent); }
 .chip-1 { top: 6%; left: -8%; animation-delay: 0s; }
 .chip-2 { bottom: 12%; right: -10%; animation-delay: 1.2s; }
 .chip-3 { bottom: -4%; left: 4%; animation-delay: 2.2s; }
